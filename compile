@@ -1,0 +1,2 @@
+ulimit -s unlimited
+gfortran -o 3dns 3dns-openmp.F90 -I/usr/local/share/fftw/include/ -L/usr/local/share/fftw/lib/ -lfftw3 -lm -fopenmp -lfftw3_threads -lpthread -lfftw3_omp
